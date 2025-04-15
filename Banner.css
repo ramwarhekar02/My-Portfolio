@@ -1,0 +1,28 @@
+.hover\:cursor-scale:hover {
+    cursor: none;
+  }
+  
+  .hover\:cursor-scale:hover::after {
+    content: '';
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: scaleCursor 0.2s ease-in-out forwards;
+  }
+
+  .hover-cursor-scale {
+    @apply transition-colors duration-300 hover:text-black;
+  }
+  
+  @keyframes scaleCursor {
+    from {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+      transform: translate(-50%, -50%) scale(50);
+    }
+  }
