@@ -39,15 +39,15 @@ const About = () => {
 
   return (
     <div ref={aboutRef}>
-      <div id="about" className="relative w-full md:min-h-screen bg-[#0D0D0D]">
-        <div className="absolute w-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[65vh] max-w-[1150px] p-4 sm:p-6 md:p-8">
+      <div id="about" className="relative w-full px-2 py-7 bg-[#0D0D0D]">
+        <div className="w-full  mx-auto max-w-[1150px] p-4 sm:p-6 md:p-8 " >
           <h1
             ref={headingRef}
             className="text-[#B7AB98] uppercase tracking-widest font-[Nunito_Sans] text-sm sm:text-base md:text-lg py-4"
           >
             About Me
           </h1>
-          <div className="text-start leading-none">
+          <div className="w-full  h-full text-start leading-none flex items-center justify-center">
             <p
               ref={paragraphRef}
               className="text-[#B7AB98] text-[6vw] sm:text-[5vw] md:text-[4.5vw] font-bold tracking-tight"

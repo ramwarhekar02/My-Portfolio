@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full p-6 md:p-10 z-50 backdrop-blur-sm">
+    <div className="fixed w-full p-6 md:p-10 z-50">
       <div className="flex max-w-[1400px] mx-auto justify-between items-center md:flex-row gap-y-6 md:gap-y-0">
         
         <div>

@@ -21,7 +21,7 @@
             <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#EB5939] rounded-full top-1/2 -translate-y-1/2"></div>
           </div>
 
-          <div className='pt-10'>
+          <div className='pt-10 px-3'>
             <img className='rounded-xl shadow-lg shadow-blue-950 w-full' src={univaries} alt="" />
             <div className='text-center mt-5 shadow p-5 md:p-10'>
               <h1 className='text-xl uppercase text-white font-bold'>UNIVARIES ECOMMERCE WEBSITE</h1>

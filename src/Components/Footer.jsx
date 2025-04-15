@@ -21,9 +21,9 @@ const Footer = () => {
               <li>
                 <a href="#about" className="hover:text-[#EB5939] transition duration-300 text-sm">About Me</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#work" className="hover:text-[#EB5939] transition duration-300 text-sm">My Work</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#projects" className="hover:text-[#EB5939] transition duration-300 text-sm">Projects</a>
               </li>
@@ -55,18 +55,18 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
 
           <div className="flex gap-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#EB5939] transition duration-300">
+            <a href="https://github.com/ramwarhekar02" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#EB5939] transition duration-300">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#EB5939] transition duration-300">
+            <a href="https://www.linkedin.com/in/ramwarhekar02/" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#EB5939] transition duration-300">
               <FaLinkedinIn />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#EB5939] transition duration-300">
+            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#EB5939] transition duration-300">
               <FaTwitter />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#EB5939] transition duration-300">
               <FaInstagram />
-            </a>
+            </a> */}
           </div>
 
           <div className="text-center md:text-right">

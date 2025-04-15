@@ -11,31 +11,31 @@ const SocialMedia = () => {
       data-scroll-ignore 
     >
       <a
-        href="https://github.com"
+        href="https://github.com/ramwarhekar02"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#B7AB98] p-3 text-xl hover:text-[#EB5939] transition duration-300"
       >
         <FaGithub />
       </a>
-      <a
+      {/* <a
         href="https://instagram.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#B7AB98] p-3 text-xl hover:text-[#EB5939] transition duration-300"
       >
         <AiFillInstagram />
-      </a>
-      <a
+      </a> */}
+      {/* <a
         href="https://youtube.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#B7AB98] p-3 text-xl hover:text-[#EB5939] transition duration-300"
       >
         <IoLogoYoutube />
-      </a>
+      </a> */}
       <a
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/in/ramwarhekar02/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#B7AB98] p-3 text-xl hover:text-[#EB5939] transition duration-300"
