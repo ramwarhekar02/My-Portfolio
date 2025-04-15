@@ -39,7 +39,7 @@ const Footer = () => {
               Want to know more about my experience and skills? Check out my resume below.
             </p>
             <a
-              href="/resume.pdf"
+              href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 py-3 bg-[#EB5939] text-white font-bold uppercase rounded-md hover:bg-[#B7432E] transition duration-300"

@@ -27,7 +27,7 @@ const Banner = () => {
               Get in Touch
             </a>
             <a 
-              href="/resume.pdf"
+              href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className='text-[#B7AB98] px-6 py-3 rounded-4xl border md:px-4 md:py-2 md:text-sm lg:px-5 lg:py-3 lg:text-base transition duration-300 hover:border-none hover:bg-[#EB5939] hover:text-white'
