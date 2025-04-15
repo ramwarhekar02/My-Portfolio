@@ -35,7 +35,7 @@ const SocialMedia = () => {
         <IoLogoYoutube />
       </a> */}
       <a
-        href="https://www.linkedin.com/in/ramwarhekar02/"
+        href="https://www.linkedin.com/in/ram-warhekar/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#B7AB98] p-3 text-xl hover:text-[#EB5939] transition duration-300"
