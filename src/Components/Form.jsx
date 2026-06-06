@@ -57,10 +57,10 @@ const ContactForm = () => {
 
     emailjs
       .send(
-        'service_2f6ur98',
-        'template_67kcb0f',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         templateParams,
-        'KU3mPrCCk0NEtUrlx'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then((result) => {
         console.log('Email sent successfully:', result.text)
