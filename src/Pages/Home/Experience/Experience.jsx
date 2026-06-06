@@ -55,8 +55,8 @@ const ExperienceCard = ({ exp, index }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Timeline dot with pulse */}
-      <div className="absolute left-0 md:left-1/2 top-5 sm:top-6 md:-translate-x-1/2 w-5 h-5 rounded-full bg-[#EB5939] z-20 ring-4 ring-[#0D0D0D] flex items-center justify-center">
+      {/* Timeline dot with pulse — desktop only */}
+      <div className="hidden md:flex absolute left-1/2 top-6 -translate-x-1/2 w-5 h-5 rounded-full bg-[#EB5939] z-20 ring-4 ring-[#0D0D0D] items-center justify-center">
         <div className="w-2 h-2 rounded-full bg-white" />
         <div
           className="absolute inset-0 rounded-full bg-[#EB5939]"
@@ -64,9 +64,9 @@ const ExperienceCard = ({ exp, index }) => {
         />
       </div>
 
-      {/* Main card */}
+      {/* Main card — full width on mobile, alternating on desktop */}
       <div
-        className={`relative w-full md:w-[calc(50%-3rem)] glass rounded-2xl p-5 sm:p-6 md:p-8 border border-zinc-800/50 hover:border-[#EB5939]/40 transition-all duration-500 ml-10 sm:ml-12 md:ml-0 ${
+        className={`relative w-full md:w-[calc(50%-3rem)] glass rounded-2xl p-5 sm:p-6 md:p-8 border border-zinc-800/50 hover:border-[#EB5939]/40 transition-all duration-500 ml-0 ${
           index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto'
         }`}
         style={{
@@ -202,12 +202,10 @@ const Experience = () => {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical center line on desktop */}
+          {/* Vertical center line — desktop only */}
           <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#EB5939]/60 via-purple-500/40 to-transparent" />
-          {/* Vertical left line on mobile */}
-          <div className="md:hidden absolute left-2.5 top-0 bottom-0 w-px bg-gradient-to-b from-[#EB5939]/60 via-purple-500/40 to-transparent" />
 
-          <div className="space-y-10 sm:space-y-12 md:space-y-16">
+          <div className="space-y-6 sm:space-y-8 md:space-y-16">
             {experienceData.map((exp, i) => (
               <div key={i} className="exp-card-anim">
                 <ExperienceCard exp={exp} index={i} />

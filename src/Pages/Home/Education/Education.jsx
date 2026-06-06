@@ -62,8 +62,8 @@ const EducationCard = ({ edu, index }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Timeline dot */}
-      <div className="absolute left-0 md:left-1/2 top-6 sm:top-8 md:-translate-x-1/2 w-4 h-4 rounded-full bg-[#EB5939] z-20 ring-4 ring-[#0D0D0D]">
+      {/* Timeline dot — desktop only */}
+      <div className="hidden md:block absolute left-1/2 top-8 -translate-x-1/2 w-4 h-4 rounded-full bg-[#EB5939] z-20 ring-4 ring-[#0D0D0D]">
         <div
           className="absolute inset-0 rounded-full bg-[#EB5939]"
           style={{
@@ -72,9 +72,9 @@ const EducationCard = ({ edu, index }) => {
         />
       </div>
 
-      {/* Card */}
+      {/* Card — full width on mobile, alternating on desktop */}
       <div
-        className={`relative w-full md:w-[calc(50%-3rem)] glass rounded-2xl p-5 sm:p-6 md:p-8 border border-zinc-800/50 hover:border-[#EB5939]/40 transition-all duration-500 ml-8 sm:ml-10 md:ml-0 ${
+        className={`relative w-full md:w-[calc(50%-3rem)] glass rounded-2xl p-5 sm:p-6 md:p-8 border border-zinc-800/50 hover:border-[#EB5939]/40 transition-all duration-500 ml-0 ${
           index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto'
         }`}
         style={{
@@ -293,12 +293,10 @@ const Education = () => {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical center line on desktop */}
+          {/* Vertical center line — desktop only */}
           <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#EB5939]/60 via-purple-500/40 to-transparent" />
-          {/* Vertical left line on mobile */}
-          <div className="md:hidden absolute left-2 top-0 bottom-0 w-px bg-gradient-to-b from-[#EB5939]/60 via-purple-500/40 to-transparent" />
 
-          <div className="space-y-10 sm:space-y-12 md:space-y-16">
+          <div className="space-y-6 sm:space-y-8 md:space-y-16">
             {educationData.map((edu, i) => (
               <div key={i} className="edu-card-anim">
                 <EducationCard edu={edu} index={i} />

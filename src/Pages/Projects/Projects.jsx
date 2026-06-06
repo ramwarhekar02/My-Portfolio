@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import univaries from '../../assets/univaries.png'
 import antaragni from '../../assets/antaragni.png'
@@ -403,6 +403,17 @@ const ProjectCard = ({ project, index }) => {
 }
 
 const Projects = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 640)
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
+  const visibleOtherProjects = isMobile ? otherProjects.slice(0, 3) : otherProjects
+
   return (
     <div id="projects" className="relative w-full bg-[#0D0D0D] overflow-hidden">
       {/* Background accents */}
@@ -443,7 +454,7 @@ const Projects = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
-            {otherProjects.map((project, index) => (
+            {visibleOtherProjects.map((project, index) => (
               <ProjectCard key={index} project={project} index={index} />
             ))}
           </div>
