@@ -39,7 +39,7 @@ const About = () => {
 
   return (
     <div ref={aboutRef}>
-      <div id="about" className="relative w-full px-2 py-7 bg-[#0D0D0D]">
+      <div id="about" className="relative w-full px-4 sm:px-6 py-7 bg-[#0D0D0D]">
         <div className="w-full  mx-auto max-w-[1150px] p-4 sm:p-6 md:p-8 " >
           <h1
             ref={headingRef}
@@ -80,7 +80,7 @@ const About = () => {
                 <span className="absolute inset-x-0 top-1/2 bg-[#EB5939] h-0 group-hover:h-full -translate-y-1/2 transition-all duration-500 ease-in-out origin-center z-0" />
 
                 <div className="relative z-10 max-w-[1150px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-y-2 sm:gap-y-0 px-4 py-4 sm:px-6">
-                  <h1 className="text-[#B7AB98] text-[7vw] sm:text-[5vw] md:text-[4.5vw] font-black uppercase scale-y-150 my-0 group-hover:text-black transition-colors duration-300">
+                  <h1 className="text-[#B7AB98] text-[7vw] sm:text-[5vw] md:text-[4.5vw] font-black uppercase scale-y-125 sm:scale-y-150 my-0 group-hover:text-black transition-colors duration-300">
                     {item.title}
                   </h1>
                   <p className="text-[#B7AB98] text-sm sm:text-base max-w-full sm:max-w-[60%] text-left sm:text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out group-hover:text-black">
