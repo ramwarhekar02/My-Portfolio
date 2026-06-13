@@ -136,7 +136,7 @@ const Footer = () => {
               </li>
               <li>
                 <span className="text-sm text-zinc-400">
-                  Pune, Maharashtra, India
+                  Nagpur, Maharashtra, India | Remote
                 </span>
               </li>
             </ul>
@@ -179,7 +179,7 @@ const Footer = () => {
 
             {/* Resume button — modern gradient highlight */}
             <a
-              href="/Resume26.pdf"
+              href="/Ram_Warhekar_26.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative mt-5 inline-flex items-center gap-2 px-4 py-2.5 rounded-full overflow-hidden cursor-pointer"

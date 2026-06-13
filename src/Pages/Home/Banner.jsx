@@ -296,7 +296,7 @@ const Banner = () => {
 
             {/* ===== BUTTON 2: 3D GRADIENT WITH BOUNCING ARROW ===== */}
             <motion.a
-              href="/Resume26.pdf"
+              href="/Ram_Warhekar_26.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -3 }}

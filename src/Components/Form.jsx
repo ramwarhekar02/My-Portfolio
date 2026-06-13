@@ -167,7 +167,7 @@ const ContactForm = () => {
                   Based in
                 </p>
                 <p className="text-white text-sm font-medium">
-                  Pune, Maharashtra, India
+                  Nagpur, Maharashtra, India | Remote
                 </p>
               </div>
             </div>
