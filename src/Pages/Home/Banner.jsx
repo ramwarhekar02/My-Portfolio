@@ -218,7 +218,7 @@ const Banner = () => {
 
             {/* Tag text */}
             <span className="text-xs md:text-sm lg:text-base font-semibold tracking-[0.25em] uppercase text-zinc-400 whitespace-nowrap">
-              Full Stack Developer
+              Applied Ai Developer | Full Stack Developer
             </span>
 
             {/* Right accent line */}
